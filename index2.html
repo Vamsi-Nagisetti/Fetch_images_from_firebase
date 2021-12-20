@@ -24,9 +24,7 @@
     #post,#uploads{
         margin-left: 5%;
     }
-        #upprogress{
-            color:"black";
-        }
+        
     </style>
 </head>
 <body>
@@ -73,7 +71,7 @@ get(child(dbRef, `ImagesLinks/`)).then((snapshot) => {
   if (snapshot.exists()) {
     console.log(snapshot.val());
     snapshot.forEach(data =>{
-        html = `<h5 class="mt-5"; style="color:black">Came Club <img src ="./success.png" style="display:inline ; width:30px;height:30px"</img></h5>
+        html = `<h5 class="mt-5"; style="color:black">MLRIT <img src ="./success.png" style="display:inline ; width:30px;height:30px"</img></h5>
         <img src ="${data.val().ImgUrl}" class="img-fluid" id = "Images"  style="border-radius:21px" /><br/>`
         document.getElementById("post").innerHTML += html;
         
